@@ -1,0 +1,268 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #07111e;
+}
+
+.content {
+  flex: 1;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.statCard {
+  background: #0a1f35;
+  border: 1px solid #0e2236;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.statLabel {
+  font-size: 10px;
+  color: #2a5070;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 5px;
+}
+
+.statValue {
+  font-size: 22px;
+  font-weight: 700;
+  color: #00cfff;
+}
+
+.statSub {
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.row3 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+}
+
+.card {
+  background: #0a1f35;
+  border: 1px solid #0e2236;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.cardHdr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.cardTitle {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4a7fa8;
+}
+
+.cardLink {
+  font-size: 11px;
+  color: #1e6fff;
+  cursor: pointer;
+}
+
+.cardLink:hover {
+  color: #00cfff;
+}
+
+.feedItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 0;
+  border-bottom: 1px solid #0e2236;
+}
+
+.feedItem:last-child {
+  border-bottom: none;
+}
+
+.feedAv {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.feedBody {
+  flex: 1;
+  overflow: hidden;
+}
+
+.feedName {
+  font-size: 12px;
+  color: #c8e4f8;
+  font-weight: 500;
+}
+
+.feedTxt {
+  font-size: 11px;
+  color: #4a7fa8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.feedTime {
+  font-size: 10px;
+  color: #1a3a55;
+  flex-shrink: 0;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 0;
+  border-bottom: 1px solid #0e2236;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+.chk {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  border: 1.5px solid #1e6fff;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.chkDone {
+  background: #1e6fff;
+  border-color: #1e6fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 8'%3E%3Cpath d='M1 4l3 3 5-6' stroke='white' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8px;
+}
+
+.taskTxt {
+  font-size: 12px;
+  color: #6a9fc0;
+  flex: 1;
+}
+
+.done .taskTxt {
+  color: #2a5070;
+  text-decoration: line-through;
+}
+
+.tag {
+  font-size: 9px;
+  padding: 2px 7px;
+  border-radius: 20px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.blue { background: #0d2d5e; color: #1e6fff; }
+.cyan { background: #042820; color: #00cfff; }
+.warn { background: #2d1f05; color: #e8a020; }
+
+.chartBars {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 100px;
+  margin-top: 8px;
+}
+
+.barWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
+
+.bar {
+  width: 100%;
+  background: #1e6fff;
+  border-radius: 3px 3px 0 0;
+  min-height: 4px;
+  transition: height 0.3s;
+}
+
+.barCyan {
+  background: #00cfff;
+}
+
+.barLbl {
+  font-size: 9px;
+  color: #2a5070;
+}
+
+.quickList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.qlItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: #07111e;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.qlItem:hover {
+  background: #0a2550;
+}
+
+.qlIc {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.qlTxt {
+  font-size: 12px;
+  color: #6a9fc0;
+  flex: 1;
+}
+
+.qlArr {
+  font-size: 14px;
+  color: #1a3a55;
+}
+
+@media (max-width: 768px) {
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .row2 { grid-template-columns: 1fr; }
+  .row3 { grid-template-columns: 1fr; }
+}

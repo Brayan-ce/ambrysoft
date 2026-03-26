@@ -1,8 +1,8 @@
-import LandingPage from "@/_Pages/main/contenido/inicio"
+import DashboardPage from "@/_Pages/main/contenido/dashboard"
 export default function Login(){
     return(
         <div>
-            <LandingPage></LandingPage>
+            <DashboardPage></DashboardPage>
         </div>
     )
 }

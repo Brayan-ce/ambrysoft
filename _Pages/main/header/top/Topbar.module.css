@@ -1,0 +1,140 @@
+.topbar {
+  height: 54px;
+  background: #050d18;
+  border-bottom: 1px solid #0e2236;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 10px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #07111e;
+  border: 1px solid #0e2236;
+  cursor: pointer;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.hamburger span {
+  width: 14px;
+  height: 1.5px;
+  background: #4a7fa8;
+  border-radius: 2px;
+  display: block;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #c8e4f8;
+  white-space: nowrap;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #07111e;
+  border: 1px solid #0e2236;
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin-left: auto;
+  color: #2a5070;
+}
+
+.search input {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  color: #6a9fc0;
+  width: 160px;
+}
+
+.search input::placeholder { color: #1a3a55; }
+
+.newBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 14px;
+  background: #1e6fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #e8f4ff;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.newBtn:hover { background: #1558d4; }
+
+.iconBtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #07111e;
+  border: 1px solid #0e2236;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+  color: #4a7fa8;
+  transition: background 0.15s;
+}
+
+.iconBtn:hover { background: #0a1f35; color: #a8d4f0; }
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #00cfff;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: 1.5px solid #050d18;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #1e6fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: #050d18;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.avatar:hover { opacity: 0.85; }
+
+@media (max-width: 768px) {
+  .topbar { padding: 0 12px; gap: 8px; }
+  .hamburger { display: flex; }
+  .search { display: none; }
+  .newBtn { margin-left: auto; padding: 6px 10px; }
+  .newBtn span { display: none; }
+  .iconBtnHide { display: none; }
+}
